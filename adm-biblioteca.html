@@ -1,0 +1,33 @@
+<html>
+  <head>
+
+    <title>Adminitrado uma biblioteca </title>
+  </head>
+   <body>
+       <script> 
+    var livros = [
+        {titulo: "livro 1" , autor : " Autor 1" , local : "A1"},
+        {titulo: "livro 2" , autor : " Autor 2" , local : "O5"},
+        {titulo: "livro 3" , autor : " Autor 3" , local : "B41"},
+        {titulo: "livro 4" , autor : " Autor 4" , local : "Y7"},
+
+    ];
+        var estantes = new Map();
+        for(var livro of livros) {
+            estantes.set(livro.titulo, livro.local );
+        }
+
+        function getLocalizacaoDoLivro(titulo) {
+          var estante = estantes.get(titulo);
+          if (estante === undefined){
+            return "Livro não encontrado no acervo!"
+          }
+          return estante
+        }
+        var localizacao = getLocalizacaoDoLivro("livro 2");
+        console.log(localizacao);
+
+       </script>
+
+   </body>
+</html>

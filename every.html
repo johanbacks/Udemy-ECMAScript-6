@@ -1,0 +1,34 @@
+<html>
+  <head>
+
+    <title>Every</title>
+  </head>
+   <body>
+       <script>    
+      var jogos = [
+        { nome : "teste1 " , categoria : "ação" },
+        { nome : "teste2 " , categoria : "corrida" },
+        { nome : "teste3 " , categoria : "corrida" },
+        { nome : "teste4 " , categoria : "corrida" } ,
+        { nome : "teste5 " , categoria : "corrida" }    
+      ];
+
+     
+     //var todosJogos = true;
+     //for(var i = 0 ; i < jogos.length ; i++ ) {
+         //var jogo = jogos[i];
+         //if(jogo.categoria !== "corrida") {
+        // todosJogos = false ;
+        // break ;    
+       //  }
+   //  }
+ // 
+   var todosJogos = jogos.every(function(jogo) {
+       return jogo.categoria === "corrida";
+   })
+     console.log(todosJogos);
+
+       </script>
+
+   </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+
+    <title>86.Iterações com Geradores</title>
+  </head>
+   <body>
+       <script>    
+      function * percorrerLinha() {
+      console.log("passei pela rua 1")
+      yield "parada 1 "
+      console.log("passei pela rua 2")
+      yield "parada 2 "
+      console.log("passei pela rua 3")
+      yield "parada 3 "
+      console.log("passei pela rua 4")
+      yield "Fim de linha "
+      }
+
+    const linha = percorrerLinha();
+    for(let parada of linha) {
+      console.log(parada);
+    }
+
+       </script>
+
+   </body>
+</html>

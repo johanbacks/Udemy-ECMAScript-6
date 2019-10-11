@@ -1,0 +1,35 @@
+<html>
+  <head>
+
+    <title>Some</title>
+  </head>
+   <body>
+       <script>    
+      var jogos = [
+        { nome : "jogo1 " , categoria : "ação" },
+        { nome : "jogo2 " , categoria : "plataforma" },
+        { nome : "jogo3 " , categoria : "aventura" },
+        { nome : "jogo4 " , categoria : "shooter" } ,
+        { nome : "jogo5 " , categoria : "corrida" }    
+      ];
+
+     
+     //var temJogoDeCorrida = false;
+     //for(var i = 0 ; i < jogos.length ; i++ ) {
+        // var jogo = jogos[i];
+         //if(jogo.categoria === "corrida") {
+        //temJogoDeCorrida = true ;
+        // break ;    
+      //  }
+   //  }
+
+   var temJogoDeCorrida = jogos.some(function(jogo) {
+       return jogo.categoria === "corrida" ; 
+   })
+
+     console.log("Tem jodo de Corrida" , temJogoDeCorrida);
+
+       </script>
+
+   </body>
+</html>

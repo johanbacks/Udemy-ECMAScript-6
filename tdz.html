@@ -1,0 +1,20 @@
+<html>
+  <head>
+
+    <title> Temporal dead zone    </title>
+  </head>
+   <body>
+       <script>
+       //  seção que mostra o uso de const / let / TDZ 
+           let valor = 0 ;
+           if(true) {
+               let valor = 1 ;
+               console.log(valor);
+           }
+            console.log(valor);
+            
+
+      </script>
+ 
+   </body>
+</html>

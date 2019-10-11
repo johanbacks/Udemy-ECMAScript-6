@@ -1,0 +1,25 @@
+<html>
+  <head>
+
+    <title>87.Symbol Interator </title>
+  </head>
+   <body>
+       <script>    
+     const equipe = {
+      quantidade : 3 ,
+      maturidade : "alta" , 
+      senior: "johan" , 
+      pleno : "flavio",
+      junior : "alison" , 
+      [Symbol.iterator] : function * () {
+        yield  this.senior ; 
+        yield  this.pleno ;
+        yield  this.junior ;  
+      }
+    }
+for(let integrante of equipe ) {
+  console.log(integrante)
+}
+       </script>
+
+   </body>

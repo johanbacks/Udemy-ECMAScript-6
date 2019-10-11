@@ -1,0 +1,28 @@
+<html>
+  <head>
+    
+    <title>Obejetos no JS </title>
+  </head>
+   <body>
+       <script>  
+
+       // FUNCOES CONSTRUTORAS  
+       // function Livro(titulo) {
+           // this.titulo = titulo ;
+       // }
+       // var livro = new Livro("Harry Poter")
+      //  console.log(livro);
+            //OBJETOS LITERAIS 
+            var livro = {
+                titulo : "Anjos e demonios"
+            }
+            livro.autor = "nome do autor"
+            livro["mostraLivro"] = function () {
+                console.log(this.titulo + " , " + this.autor);
+            }
+            livro.mostraLivro();
+
+       </script>
+
+   </body>
+</html>

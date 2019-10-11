@@ -1,0 +1,22 @@
+<html>
+  <head>
+
+    <title>Contexto de Execução </title>
+  </head>
+   <body>
+       <script>    
+        const equipe = {
+            nome : "equipe1" ,
+            membros : [ "nome1" , "nome2" , "nome3"],
+            membrosDaEquipe : function() {
+                this.membros.forEach(membro =>  {
+                    console.log(`${membro} faz parte da equipe ${this.nome}`)
+                })
+            } 
+        }
+        equipe.membrosDaEquipe();
+
+       </script>
+
+   </body>
+</html>

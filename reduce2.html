@@ -1,0 +1,26 @@
+<html>
+  <head>
+
+    <title>Reduce</title>
+  </head>
+   <body>
+       <script>    
+        var alunos= [
+            {nome : "joao " , idade : 10},
+            {nome : "jose " , idade : 20},
+            {nome : "marcos " , idade : 30},
+        ];
+
+        var nomes = alunos.reduce(function(arrayNomes ,aluno ){
+                arrayNomes.push(aluno.nome);
+                return arrayNomes ; 
+        }, [] );
+
+
+
+        console.log(nomes)
+
+       </script>
+
+   </body>
+</html>

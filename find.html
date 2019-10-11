@@ -1,0 +1,33 @@
+<html>
+  <head>
+
+    <title>Find</title>
+  </head>
+   <body>
+       <script>    
+       var alunos = [
+           {nome: "Joao " , idade : 25},
+           {nome: "Maria"  , idade : 12},
+           {nome: "Jose " , idade : 18},
+           {nome: "Tulio " , idade : 16}
+       ];
+
+    // var alunoProcurado ;
+     //for(var i = 0 ; i < alunos.length ; i++ ) {
+        // var aluno = alunos[i];
+         //if (aluno.nome === "Maria") {
+            // alunoProcurado = aluno;
+           //  break ;    
+        // }   
+ // }
+ 
+ // find procura somente a primeira ocorrencia ...
+
+             var alunoProcurado = alunos.find(function(aluno){
+                 return aluno.nome = "Maria";
+             });
+                console.log(alunoProcurado);
+       </script>
+
+   </body>
+</html>

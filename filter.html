@@ -1,0 +1,28 @@
+<html>
+  <head>
+
+    <title>Filter</title>
+  </head>
+   <body>
+       <script>    
+       var alunos = [
+           {nome: "Joao " , idade : 25},
+           {nome: "Maria"  , idade : 12},
+           {nome: "Jose " , idade : 18},
+           {nome: "Tulio " , idade : 16}
+       ]
+            //var alunosDeMaior = [];
+           // for(var i = 0 ; i< alunos.length ; i++ ) {
+            //    var aluno = alunos[i];
+              //  if (aluno.idade >= 18 ) alunosDeMaior.push(aluno);
+           // }
+
+           var alunosDeMaior = alunos.filter(function(aluno){
+            return aluno.idade >= 18 ;
+           });
+            console.log(alunosDeMaior);
+
+       </script>
+
+   </body>
+</html>

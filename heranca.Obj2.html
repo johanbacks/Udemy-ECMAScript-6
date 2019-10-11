@@ -1,0 +1,28 @@
+<html>
+  <head>
+
+    <title>76.Usando Classes</title>
+  </head>
+   <body>
+       <script>    
+    
+      class Carro {
+        constructor( modelo , chassi , qtdPortas){
+          this.modelo = modelo;
+          this.chassi = chassi ;
+          this.qtdPortas = qtdPortas ; 
+        }
+        andar() {
+          console.log("carro andando")
+        }  
+      }
+      const carroBasico = new Carro("basico" , " 56546546" , 2 )
+      console.log(carroBasico.modelo , carroBasico.chassi , carroBasico.qtdPortas);
+      Carro
+      carroBasico.andar();
+
+
+       </script>
+
+   </body>
+</html>

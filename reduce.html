@@ -1,0 +1,24 @@
+<html>
+  <head>
+
+    <title>Reduce</title>
+  </head>
+   <body>
+       <script>    
+        var numeros = [
+            1 ,2 ,3, 4,5
+        ]; 
+
+        //var soma =  0 ;
+        //for(var i = 0 ; i < numeros.length ; i++ ) {
+           // soma += numeros[i];
+        //}
+var soma = numeros.reduce(function(soma , numero) {
+    return soma += numero ;
+} ,0 ) ;
+        console.log(soma);
+
+       </script>
+
+   </body>
+</html>

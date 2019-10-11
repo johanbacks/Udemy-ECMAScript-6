@@ -1,0 +1,41 @@
+<html>
+  <head>
+
+    <title> Sets </title>
+  </head>
+   <body>
+       <script> 
+
+//O Set é uma estrutura de dados que nos permite ter listas com valores que nunca se duplicam e que mantém a ordem
+    
+        var musica_1 = {title : "nome musica 1 " , autor : "autor 1"};
+        var musica_2 = {title : "nome musica 2 " , autor : "autor 2"};
+        var musica_3 = {title : "nome musica 3 " , autor : "autor 3"};
+        var musica_4 = {title : "nome musica 4 " , autor : "autor 4"};
+        var musica_5 = {title : "nome musica 5 " , autor : "autor 5"};
+
+        var playlist = new Set();
+
+
+ //add musica
+ playlist.add(musica_1);
+ playlist.add(musica_2);
+
+ //Deletar Musica 
+ playlist.delete(musica_1);
+
+ //remover todas as musicas 
+// playlist.clear();
+
+//ver quantidade de muscas
+ console.log(playlist.size);
+
+
+ //ver musicas na playist 
+ for(var musica of playlist) {
+     console.log(musica);
+ }
+       </script>
+ 
+   </body>
+</html>

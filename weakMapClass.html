@@ -1,0 +1,26 @@
+<html>
+  <head>
+
+    <title>79.Atributos privados em classes com WeakMap</title>
+  </head>
+   <body>
+       <script>    
+    
+        const propriedades = new WeakMap();
+
+        class VideoGame {
+          constructor (nome , controle , saida , midia ) {
+            propriedades.set(this , { nome , controle , saida , midia}); 
+          }
+          recuperaPropriedade(propriedade) {
+            return propriedades.get(this)[propriedade];
+          }
+        }
+        const xbox = new VideoGame("Xbox", 4 , "hdmi", "dvd"); 
+        console.log(xbox.recuperaPropriedade("nome")); 
+
+
+       </script>
+
+   </body>
+</html>

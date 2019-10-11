@@ -1,0 +1,30 @@
+<html>
+  <head>
+    
+    <title>73.2 - Utilizando desestruturamento   </title>
+  </head>
+   <body>
+       <script>  
+     const contatos = [
+         {
+         nome : "nome 1",
+         telefone : "3321-4256",
+     },
+     {
+         nome : "nome 2",
+         telefone : "3321-4256222",
+     },
+     {
+         nome : "nome 3",
+         telefone : "3321-4256",
+     }
+     ];
+     function pegarNumero([,{telefone}]) {
+         console.log(telefone)
+     }
+     pegarNumero(contatos);
+
+       </script>
+
+   </body>
+</html> 

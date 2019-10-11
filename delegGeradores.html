@@ -1,0 +1,43 @@
+<html>
+  <head>
+    
+    <title> 88.Delegação de funções Geradoras </title>
+  </head>
+   <body>
+       <script>  
+      const time1  = {
+        quantidade : 3 ,
+        senior : "johan",
+        pleno: "maria" , 
+        junior : "pedro",
+        [Symbol.iterator] : function*() {
+          yield this.senior;
+          yield this.pleno ;
+          yield this.junior; 
+        }
+      }
+      const time2 = {
+        quantidade: 2 ,
+        diretor : "visente",
+        vice: "augusto",
+        [Symbol.iterator] : function*() {
+          yield this.diretor ;
+          yield this.vice ;          
+        }
+      }
+      const total = {
+        time1,
+        time2,
+        [Symbol.iterator] : function*() {
+          yield* time1,
+          yield* time2 
+        }
+      }
+      for(let integrantes of total) {
+        console.log(integrantes);
+      }
+
+       </script>
+
+   </body>
+</html>

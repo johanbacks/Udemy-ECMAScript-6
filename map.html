@@ -1,0 +1,48 @@
+<html>
+  <head>
+
+    <title>Map</title>
+  </head>
+   <body>
+       <script>    
+  
+        var map = new Map();
+        function funcao(){};
+        var objeto = {};
+
+        map.set("string" , "String1");
+        map.set("string2" , "String2");
+        map.set(objeto , "oObejeto");
+        map.set(funcao , "aFunção");  
+
+            //GET
+        console.log(map.get("string"));
+        console.log(map.get(objeto));
+        console.log(map.get(funcao));
+
+            //SIZE
+        console.log("tamanho" , map.size);
+
+            //HAS
+        console.log( map.has("string"));
+        console.log( map.has("string5"));
+
+            //DELETE
+        map.delete("string2");
+        console.log( map.has("string2"));
+        
+        for(var chave of map.keys()){
+            console.log(chave)
+        };
+        
+        for(var valor of map.values()){
+            console.log(valor)
+        };
+        for(var entrada of map.entries()){
+            console.log(entrada)
+        };
+
+       </script>
+
+   </body>
+</html>

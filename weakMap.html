@@ -1,0 +1,27 @@
+<html>
+  <head>
+
+    <title> weakMap </title>
+  </head>
+   <body>
+       <script> 
+      var weakMap = new WeakMap();
+      var elemento1 = { atr: 1};
+      var elemento2 = { atr: 2}; 
+
+      weakMap.set(elemento1, "sou elemento 1");
+      weakMap.set(elemento2, "sou elemento 2");
+
+      console.log(weakMap.get(elemento1));
+      console.log(weakMap.get(elemento2));
+
+      //set
+      //delete
+      //get 
+      //has
+
+
+       </script>
+
+   </body>
+</html>

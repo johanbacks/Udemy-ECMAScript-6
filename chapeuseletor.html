@@ -1,0 +1,23 @@
+<html>
+  <head>
+
+    <title>Chapeu Seletor</title>
+  </head>
+   <body>
+       <script>    
+        var chapeuSeletor  = function(bruxo) {
+            var casas = ["casa1" , "casa2", "casa3" , "casa4"] ;
+            var casa = [Math.floor(Math.random() * casas.length)] ;
+        console.log("Bruxo" + bruxo + "| Casa" + casa);
+        }
+
+        var bruxos = ["bruxo1" , "bruxo2" , "bruxo3"];
+        for(var bruxo of bruxos) {
+            chapeuSeletor(bruxo) ;
+        }
+      
+
+       </script>
+
+   </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+
+    <title>Iteráveis</title>
+  </head>
+   <body>
+       <script>    
+        var chapeuSeletor  = function(bruxo) {
+            var casas = ["casa1" , "casa2", "casa3" , "casa4"] ;
+            var casa = [Math.floor(Math.random() * casas.length)] ;
+        console.log("Bruxo" + bruxo + "| Casa" + casa);
+        }
+
+        var bruxos = ["bruxo1" , "bruxo2" , "bruxo3"];
+        var iterator = bruxos[Symbol.iterator]();
+        var done = false ; 
+       var proximo = iterator.next();
+        do {
+            var bruxo = proximo.value;
+            chapeuSeletor(bruxo);
+            proximo = iterator.next();
+        } while(!proximo.done);
+
+
+
+       </script>
+
+   </body>
+</html>
